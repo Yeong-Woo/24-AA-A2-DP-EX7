@@ -6,10 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MazeGameAbstractFactory",
+            "request": "launch",
+            "mainClass": "maze.MazeGameAbstractFactory",
+            "projectName": "7_0_factorymethod_mazeProblem_8b2645c6",
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "args": "Large"
+            // "args": "Harry"
+            "args": "Snow"
         },
         {
             "type": "java",

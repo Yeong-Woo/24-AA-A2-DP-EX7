@@ -112,12 +112,10 @@ public class MazeGameAbstractFactory {
         if (args.length > 0) {
             if ("Harry".equals(args[0])) {
                 factory = new maze.harry.HarryPotterMazeFactory();
+            } else if ("Snow".equals(args[0])) {
+                factory = new maze.snow.SnowWhiteMazeFactory();
             }
-            /*
-             * else if ("Snow".equals(args[0])) {
-             * factory = new maze.snow.SnowWhiteMazeFactory();
-             * }
-             */
+
         }
         if (factory == null) {
             factory = new MazeFactory();

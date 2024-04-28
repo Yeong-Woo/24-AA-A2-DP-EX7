@@ -124,12 +124,9 @@ public class MazeGameCreator {
         if (args.length > 0) {
             if ("Harry".equals(args[0])) {
                 creator = new maze.harry.HarryPotterMazeGameCreator();
+            } else if ("Snow".equals(args[0])) {
+                creator = new maze.snow.SnowWhiteMazeGameCreator();
             }
-            /*
-             * else if ("Snow".equals(args[0])) {
-             * creator = new maze.snow.SnowWhiteMazeGameCreator();
-             * }
-             */
         }
         if (creator == null) {
             creator = new MazeGameCreator();

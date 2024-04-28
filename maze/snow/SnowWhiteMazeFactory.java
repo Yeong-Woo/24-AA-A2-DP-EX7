@@ -3,20 +3,19 @@ package maze.snow;
 import maze.*;
 
 // don't forget to inherit
-public class SnowWhiteMazeFactory {
+public class SnowWhiteMazeFactory extends MazeFactory {
     // create the Wall
     public Wall makeWall() {
-        return null;
+        return new SnowWhiteWall();
     }
 
     // create the Room
     public Room makeRoom(int roomNumber) {
-        return null;
+        return new SnowWhiteRoom(roomNumber);
     }
 
     // create the Door
     public Door makeDoor(Room room1, Room room2) {
-        return null;
-
+        return new SnowWhiteDoor(room1, room2);
     }
 }
