@@ -1,8 +1,5 @@
-
 package maze;
 
-public interface UndoableCommand extends Command { 
-
-  public void undo(); 
-
+public interface UndoableCommand extends Command {
+    public void undo();
 }

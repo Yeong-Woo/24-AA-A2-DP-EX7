@@ -1,9 +1,5 @@
-
 package maze;
 
-public interface Command { 
-
-  public void execute(); 
-
+public interface Command {
+    public void execute();
 }
-
