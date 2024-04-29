@@ -115,7 +115,6 @@ public class MazeGameAbstractFactory {
             } else if ("Snow".equals(args[0])) {
                 factory = new maze.snow.SnowWhiteMazeFactory();
             }
-
         }
         if (factory == null) {
             factory = new MazeFactory();

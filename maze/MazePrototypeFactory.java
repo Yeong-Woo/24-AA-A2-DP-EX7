@@ -63,7 +63,15 @@ public class MazePrototypeFactory extends MazeFactory {
         Maze maze;
         MazePrototypeFactory factory = null;
         MazeFactory prototypeFactory = null;
-        /* fill here */
+
+        if (args.length > 0) {
+            if ("Harry".equals(args[0])) {
+                prototypeFactory = new maze.harry.HarryPotterMazeFactory();
+            } else if ("Snow".equals(args[0])) {
+                prototypeFactory = new maze.snow.SnowWhiteMazeFactory();
+            }
+        }
+
         if (prototypeFactory == null) {
             prototypeFactory = new MazeFactory();
         }
@@ -76,15 +84,3 @@ public class MazePrototypeFactory extends MazeFactory {
         maze.showFrame("Maze -- Prototype");
     }
 }
-
-/*
- * if (args.length > 0) {
- * if ("Harry".equals(args[0])) {
- * prototypeFactory = new maze.harry.HarryPotterMazeFactory();
- * }
- * else if ("Snow".equals(args[0])) {
- * prototypeFactory = new maze.snow.SnowWhiteMazeFactory();
- * 
- * }
- * }
- */

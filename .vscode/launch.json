@@ -6,17 +6,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MazePrototypeFactory",
+            "request": "launch",
+            "mainClass": "maze.MazePrototypeFactory",
+            "projectName": "7_0_factorymethod_mazeProblem_8b2645c6",
+            "args": "Snow"
+        },
+        {
+            "type": "java",
             "name": "MazeGameAbstractFactory",
             "request": "launch",
             "mainClass": "maze.MazeGameAbstractFactory",
-            "projectName": "7_0_factorymethod_mazeProblem_8b2645c6",
+            "projectName": "7_0_factorymethod_mazeProblem_8b2645c6"
         },
         {
             "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            // "args": "Harry"
             "args": "Snow"
         },
         {
